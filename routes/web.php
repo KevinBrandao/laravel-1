@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HelloController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/3', function () {
+    //return view('welcome');
+    return 'Hello Word';
 });
+Route::get('/2', function (){
+    return 'MazzaFC';
+}); 
+ 
+Route::get('/',  [HelloController::class, 'index']);
