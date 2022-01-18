@@ -7,8 +7,8 @@
     <title>Templates</title>
 </head>
 <body>
+    
+                <h2>Instituto de Ciência e Tecnologia de Franca</h2>
 
-                 <h1>Meu primeiro template Blade</h1>
-                 
 </body>
 </html>
